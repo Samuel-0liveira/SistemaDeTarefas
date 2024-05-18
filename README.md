@@ -1,9 +1,9 @@
 # SistemaDeTarefas
 
-<p align = "center">
+<p align = "left">
 <img loading = "lazy" src = "https://img.shields.io/badge/Status-Em_desenvolvimento-blue"/>
 <img loading = "lazy" src = "https://img.shields.io/badge/Licença-MIT-purple"/>
-<img loading = "lazy" src = "https://img.shields.io/badge/ASP.NET-239120?"/>
+<img loading = "lazy" src = "https://img.shields.io/badge/Linguagem-ASP.NET-239120?"/>
 <br>
 </p>
 <br>
