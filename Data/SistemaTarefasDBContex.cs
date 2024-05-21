@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SistemaDeTarefas.Models;
 
 namespace SistemaDeTarefas.Data
 {
@@ -9,6 +10,7 @@ namespace SistemaDeTarefas.Data
             
         }
 
-
+        public DbSet<UsuarioModel> Usuarios { get; set; }
+        public DbSet<TarefaModel> Tarefas { get; set; }
     }
 }
