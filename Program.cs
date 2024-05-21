@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using SistemaDeTarefas.Data;
+
 namespace SistemaDeTarefas
 {
     public class Program
@@ -13,6 +16,8 @@ namespace SistemaDeTarefas
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddEntityFrameworkSqlServer().AddDbContext<SistemaTarefasDBContex>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Database")));
 
             var app = builder.Build();
 
